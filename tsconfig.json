@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "ES6",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "target": "ES5"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

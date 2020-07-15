@@ -1,0 +1,153 @@
+{
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "types"
+  ],
+  "overrides": [
+    {
+      "extends": [
+        "standard"
+      ],
+      "files": "*.js"
+    },
+    {
+      "env": {
+        "browser": true,
+        "node": true
+      },
+      "extends": [
+        "eslint:all",
+        "plugin:@typescript-eslint/all"
+      ],
+      "files": [
+        "*.ts"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+      },
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "rules": {
+        "@typescript-eslint/indent": [
+          "error",
+          2
+        ],
+        "@typescript-eslint/lines-between-class-members": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": {
+              "memberTypes": [
+                "signature",
+                "public-static-field",
+                "protected-static-field",
+                "private-static-field",
+                "public-decorated-field",
+                "protected-decorated-field",
+                "private-decorated-field",
+                "public-instance-field",
+                "protected-instance-field",
+                "private-instance-field",
+                "public-abstract-field",
+                "protected-abstract-field",
+                "private-abstract-field",
+                "public-constructor",
+                "protected-constructor",
+                "private-constructor",
+                "public-static-method",
+                "protected-static-method",
+                "private-static-method",
+                "public-decorated-method",
+                "protected-decorated-method",
+                "private-decorated-method",
+                "public-instance-method",
+                "protected-instance-method",
+                "private-instance-method",
+                "public-abstract-method",
+                "protected-abstract-method",
+                "private-abstract-method"
+              ],
+              "order": "alphabetically"
+            }
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": [
+              "strictCamelCase",
+              "StrictPascalCase",
+              "UPPER_CASE"
+            ],
+            "selector": "variable"
+          }
+        ],
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-magic-numbers": "off",
+        "@typescript-eslint/no-parameter-properties": "off",
+        "@typescript-eslint/no-unused-vars-experimental": [
+          "error",
+          {
+            "ignoreArgsIfArgsAfterAreUsed": true
+          }
+        ],
+        "@typescript-eslint/prefer-readonly-parameter-types": "off",
+        "@typescript-eslint/quotes": [
+          "error",
+          "single"
+        ],
+        "@typescript-eslint/semi": [
+          "error",
+          "never"
+        ],
+        "array-element-newline": [
+          "error",
+          "consistent"
+        ],
+        "arrow-body-style": [
+          "error",
+          "always"
+        ],
+        "class-methods-use-this": "off",
+        "dot-location": "off",
+        "function-call-argument-newline": [
+          "error",
+          "consistent"
+        ],
+        "max-len": "off",
+        "max-params": "off",
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 0,
+            "maxEOF": 0
+          }
+        ],
+        "no-ternary": "off",
+        "no-undefined": "off",
+        "no-underscore-dangle": "off",
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "one-var": [
+          "error",
+          "never"
+        ],
+        "padded-blocks": "off",
+        "prefer-named-capture-group": "off",
+        "quote-props": [
+          "error",
+          "consistent"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "adpyke.vscode-sql-formatter",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "travisillig.vscode-json-stable-stringify",
+    "yzhang.markdown-all-in-one"
+  ]
+}
