@@ -52,7 +52,6 @@
   ],
   "license": "MIT",
   "name": "@scola/test",
-  "private": true,
   "repository": "github:scola84/test",
   "scripts": {
     "build:dev": "rimraf ./{dist,types} && rollup -cmw",
