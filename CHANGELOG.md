@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/scola84/test/compare/v1.1.0...v2.0.0) (2020-07-16)
+
+
+### Features
+
+* **printer:** remove shorthand value setter ([b06a6c4](https://github.com/scola84/test/commit/b06a6c4538c6e2893ca1958fd4660acf524e80f6))
+
+
+### BREAKING CHANGES
+
+* **printer:** The value setter is removed.
+
 # [1.1.0](https://github.com/scola84/test/compare/v1.0.0...v1.1.0) (2020-07-16)
 
 
