@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/scola84/test/compare/v2.0.0...v2.1.0) (2020-07-16)
+
+
+### Features
+
+* **printer:** add shorthand value setter after all ([45eef53](https://github.com/scola84/test/commit/45eef53972d51a95664a8cd31e54767225c60fd0))
+
 # [2.0.0](https://github.com/scola84/test/compare/v1.1.0...v2.0.0) (2020-07-16)
 
 
