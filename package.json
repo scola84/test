@@ -65,7 +65,7 @@
     "lint:dev:css": "if [ $(yarn -s find:css | wc -c) -gt 0 ]; then prettier --write $(yarn -s find:css); fi",
     "lint:dev:tsc": "tsc && eslint --fix $(yarn -s find:tsc)",
     "lint:pub": "yarn lint:pub:css && yarn lint:pub:tsc",
-    "lint:pub:css": "prettier --check ./src/**/*.css",
+    "lint:pub:css": "if [ $(find ./src -name '*.css' | wc -c) -gt 0 ]; then prettier --check ./src/**/*.css; fi",
     "lint:pub:tsc": "tsc && eslint .",
     "start:dev": "onchange -i -k ./src -- node --experimental-loader ts-node/esm.mjs --experimental-specifier-resolution=node ${NODE_SCRIPT}",
     "start:pub": "node --experimental-loader ts-node/esm.mjs --experimental-specifier-resolution=node ${NODE_SCRIPT}",
