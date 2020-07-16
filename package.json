@@ -62,7 +62,7 @@
     "find:tsc": "yarn -s find:git | grep -E '\\.(js|ts)$'",
     "lint:dev": "yarn lint:dev:css && yarn lint:dev:tsc && git add $(yarn -s find:all)",
     "lint:dev:css": "if [ $(yarn -s find:css | wc -c) -gt 0 ]; then prettier --write $(yarn -s find:css); fi",
-    "lint:dev:tsc": "tsc && eslint --fix $(yarn -s find:tsc)",
+    "lint:dev:tsc": "if [ $(yarn -s find:tsc | wc -c) -gt 0 ]; then tsc && eslint --fix $(yarn -s find:tsc); fi",
     "lint:pub": "yarn lint:pub:css && yarn lint:pub:tsc",
     "lint:pub:css": "if [ $(find ./src -name '*.css' | wc -c) -gt 0 ]; then prettier --check ./src/**/*.css; fi",
     "lint:pub:tsc": "if [ $(find ./src -name '*.ts' | wc -c) -gt 0 ]; then tsc && eslint .; fi",
