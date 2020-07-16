@@ -73,5 +73,5 @@
   },
   "type": "module",
   "types": "./types/esm.d.ts",
-  "version": "2.1.0"
+  "version": "3.0.0"
 }
