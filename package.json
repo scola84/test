@@ -1,11 +1,11 @@
 {
   "author": "M.C. van den Boogaart <scola@kvdb.name>",
-  "browser": "./dist/js/lib.umd.js",
+  "browser": "./dist/js/test.umd.js",
   "contributors": [
     "M.C. van den Boogaart <scola@kvdb.name>"
   ],
   "dependencies": {},
-  "description": "The Scola Library",
+  "description": "The Scola Test",
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
@@ -45,15 +45,15 @@
   "engines": {
     "node": ">=14"
   },
-  "exports": "./dist/js/lib.esm.js",
+  "exports": "./dist/js/test.esm.js",
   "files": [
     "./dist/",
     "./types/"
   ],
   "license": "MIT",
-  "name": "@scola/lib",
+  "name": "@scola/test",
   "private": true,
-  "repository": "github:scola84/lib",
+  "repository": "github:scola84/test",
   "scripts": {
     "build:dev": "rimraf ./{dist,types} && rollup -cmw",
     "build:pub": "rimraf ./{dist,types} && rollup -c && gzip ./dist/**/*.{css,js}",
