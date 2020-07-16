@@ -17,8 +17,4 @@ export class Printer {
     this._value = value
     return this
   }
-
-  public value (value: string): this {
-    return this.setValue(value)
-  }
 }
