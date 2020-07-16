@@ -16,10 +16,12 @@ jobs:
           node-version: 14
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Lint source code
+      - name: Lint src
         run: yarn lint:pub
-      - name: Test source code
+      - name: Test src
         run: yarn test:pub
+      - name: Build dist
+        run: yarn build:pub
       - name: Release
         run: yarn semantic-release
         env:
