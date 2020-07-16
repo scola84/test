@@ -47,8 +47,8 @@
   },
   "exports": "./dist/js/test.esm.js",
   "files": [
-    "./dist/",
-    "./types/"
+    "dist",
+    "types"
   ],
   "license": "MIT",
   "name": "@scola/test",

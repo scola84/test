@@ -70,7 +70,7 @@ const esm = {
     ...plugins,
     typescript({
       declaration: true,
-      declarationDir: 'types/'
+      declarationDir: './types'
     })
   ]
 }
@@ -96,7 +96,7 @@ const umd = {
       targets: [
         {
           src: './node_modules/ionicons/dist/fonts/*',
-          dest: './dist/fonts/'
+          dest: './dist/fonts'
         }
       ]
     }),
