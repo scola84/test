@@ -66,11 +66,11 @@
     "lint:dev:tsc": "tsc && eslint --fix $(yarn -s find:tsc)",
     "lint:pub": "yarn lint:pub:css && yarn lint:pub:tsc",
     "lint:pub:css": "if [ $(find ./src -name '*.css' | wc -c) -gt 0 ]; then prettier --check ./src/**/*.css; fi",
-    "lint:pub:tsc": "tsc && eslint .",
+    "lint:pub:tsc": "if [ $(find ./src -name '*.ts' | wc -c) -gt 0 ]; then tsc && eslint .; fi",
     "start:dev": "onchange -i -k ./src -- node --experimental-loader ts-node/esm.mjs --experimental-specifier-resolution=node ${NODE_SCRIPT}",
     "start:pub": "node --experimental-loader ts-node/esm.mjs --experimental-specifier-resolution=node ${NODE_SCRIPT}",
     "test:dev": "if [ $(yarn -s find:tsc | wc -c) -gt 0 ]; then jest --bail --findRelatedTests $(yarn -s find:tsc); fi",
-    "test:pub": "jest --bail"
+    "test:pub": "if [ $(find ./test -name '*.ts' | wc -c) -gt 0 ]; then jest --bail; fi"
   },
   "type": "module",
   "types": "./types/esm.d.ts",
